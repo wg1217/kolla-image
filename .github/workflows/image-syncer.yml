@@ -8,7 +8,7 @@
 #
 # 2. Change the values for the ALIYUN_REGISTRY, ALIYUN_NAMESPACE  environment variables (below).
 
-name: CI
+name: image-syncer
 on:
   push:
     branches: [ master ]
