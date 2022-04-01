@@ -8,7 +8,7 @@
 #
 # 2. Change the values for the ALIYUN_REGISTRY, ALIYUN_NAMESPACE  environment variables (below).
 
-name: CI
+name: get-kolla-images
 on:
   push:
     branches: [ master ]
@@ -18,11 +18,10 @@ on:
 env:
   DOCKER_NAMESPACE: kolla
   KOLLA_BASE_DISTRO: centos
-  INSTALL_TYPE: source
+  INSTALL_TYPE: binary
   OPENSTACK_RELEASE: train
-  ALIYUN_REGISTRY: registry.cn-shenzhen.aliyuncs.com
-  ALIYUN_NAMESPACE: kollaimage
-
+  ALIYUN_REGISTRY: registry.cn-hangzhou.aliyuncs.com
+  ALIYUN_NAMESPACE: kolla-image-lwg
 jobs:
   get-kolla-images:
     runs-on: ubuntu-latest
