@@ -43,10 +43,9 @@ jobs:
       run: |
         first_index=($(ls -l kolla/docker | grep "^d" | awk '{print $NF}'))	 
         
-        first_file=iscsid
+              
         
-        
-        echo $first_file >> images.txt
+        echo rabbitmq >> images.txt
          
             
      
